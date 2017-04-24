@@ -24,10 +24,10 @@
 		83FEEE46128E496A007C310F /* CMPopTipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83FEEE45128E496A007C310F /* CMPopTipView.m */; };
 		83FEEE61128E4F98007C310F /* Demo1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83FEEE5F128E4F98007C310F /* Demo1ViewController.m */; };
 		83FEEE62128E4F98007C310F /* Demo1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83FEEE60128E4F98007C310F /* Demo1ViewController.xib */; };
-		FC2EA84B1EADF06000D6809C /* CMPopTipView.h in Headers */ = {isa = PBXBuildFile; fileRef = FC2EA8491EADF06000D6809C /* CMPopTipView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC2EA84E1EADF06000D6809C /* CMPopTipView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC2EA8471EADF06000D6809C /* CMPopTipView.framework */; };
 		FC2EA84F1EADF06000D6809C /* CMPopTipView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FC2EA8471EADF06000D6809C /* CMPopTipView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FC2EA8551EADF08300D6809C /* CMPopTipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83FEEE45128E496A007C310F /* CMPopTipView.m */; };
+		FC2EA8601EADFF7A00D6809C /* CMPopTipView.h in Headers */ = {isa = PBXBuildFile; fileRef = 83FEEE44128E496A007C310F /* CMPopTipView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,8 +88,7 @@
 		83FEEE60128E4F98007C310F /* Demo1ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Demo1ViewController.xib; path = Shared/Demo1ViewController.xib; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* CMPopTipViewDemo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CMPopTipViewDemo-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		FC2EA8471EADF06000D6809C /* CMPopTipView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CMPopTipView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FC2EA8491EADF06000D6809C /* CMPopTipView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMPopTipView.h; sourceTree = "<group>"; };
-		FC2EA84A1EADF06000D6809C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC2EA84A1EADF06000D6809C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Demo/CMPopTipView/Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,7 +172,6 @@
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				839195F41377FE0F00FC65F9 /* Resources */,
 				462776EA1AE289EF00192059 /* CMPopTipViewTests */,
-				FC2EA8481EADF06000D6809C /* CMPopTipView */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
@@ -233,18 +231,10 @@
 			children = (
 				83FEEE44128E496A007C310F /* CMPopTipView.h */,
 				83FEEE45128E496A007C310F /* CMPopTipView.m */,
+				FC2EA84A1EADF06000D6809C /* Info.plist */,
 			);
 			name = CMPopTipView;
 			path = ../CMPopTipView;
-			sourceTree = "<group>";
-		};
-		FC2EA8481EADF06000D6809C /* CMPopTipView */ = {
-			isa = PBXGroup;
-			children = (
-				FC2EA8491EADF06000D6809C /* CMPopTipView.h */,
-				FC2EA84A1EADF06000D6809C /* Info.plist */,
-			);
-			path = CMPopTipView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,7 +244,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC2EA84B1EADF06000D6809C /* CMPopTipView.h in Headers */,
+				FC2EA8601EADFF7A00D6809C /* CMPopTipView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -777,6 +767,7 @@
 				FC2EA8511EADF06000D6809C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
